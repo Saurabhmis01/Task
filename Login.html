@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #nm{
+           padding-right: 150px;
+           margin-left: 590px;
+           font-size: 18px; 
+        }
+        #pass{
+            padding-right: 150px;
+            margin-left: 600px;
+            font-size: 18px;
+        }
+        body{
+            /* background-color: cadetblue; */
+        }
+        #capt{
+            padding-right: 110px;
+            margin-left: 600px;
+            font-size: 18px;
+        }
+        #show{
+            margin-left: 600px;
+            padding-top: 30px;
+        }
+        #log{
+            margin-left: 600px;
+            padding: 10px 150px 10px 180px;
+            margin-top: 10px;
+            background-color: rgb(63, 63, 173);
+        }
+        #foam{
+            padding-left: 670px;
+            color: aliceblue;
+            margin-top: 170px;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="foam"><b>Login Foam</b></div>
+    
+        
+    <div style="padding-top: 50px; margin: 10px;">
+        <label id="nm" for="nm"><b>Username</b></label><br>
+        <input id="nm" type="text" placeholder="Username">
+    </div>
+    <div>
+        <label id="pass" for="pass"><b>Password</b></label><br>
+        <input id="pass" type="pass" placeholder="Password">
+    </div>
+    <div>
+        <p style="margin-left: 600px; font-size: 18px;"><b>Enter Captcha</b></p>
+        <div id="show"></div>
+        <button onclick="generate()">refresh</button>
+        <input id="capt" type="text" placeholder="Enter Captcha text">
+    </div>
+    <button id="log"><b>Login</b></button>
+
+
+    <script src="./Task.js"></script>
+
+</body>
+</html>
